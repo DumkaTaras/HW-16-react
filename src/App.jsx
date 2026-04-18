@@ -5,7 +5,7 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import { all } from "axios";
 
-const Counter_featbacks = () => {
+const Counter_feetbacks = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -25,7 +25,7 @@ const Counter_featbacks = () => {
 
   return (
     <div className="counter">
-      <h1>Please leave feadback</h1>
+      <h1>Please leave feedback</h1>
       <button onClick={() => setGood(good + 1)}>Good</button>
       <button onClick={() => setNeutral(neutral + 1)}>Neutral</button>
       <button onClick={() => setBad(bad + 1)}>Bad</button>
@@ -37,10 +37,10 @@ const Counter_featbacks = () => {
           <p>Neutral: {neutral}</p>
           <p>Bad: {bad}</p>
           <h3 className="positive_FeadBack">
-            Positive feadback: {countTotalFeedback()}%
+            Positive feedback: {countTotalFeedback()}%
           </h3>
         </div>
-      )) || <p>There is not feadback</p>}
+      )) || <p>There is not feedback</p>}
     </div>
   );
 };
@@ -48,7 +48,7 @@ const Counter_featbacks = () => {
 function App() {
   return (
     <div className="container">
-      <Counter_featbacks />
+      <Counter_feetbacks />
     </div>
   );
 }
